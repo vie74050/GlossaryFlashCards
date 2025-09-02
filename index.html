@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>Glossary</title>
+    <link rel="stylesheet" href="./src/styles.css" />
+
+
+  </head>
+
+  <body>
+    <h1>Glossary</h1>
+
+    <p>Example of inline definition on hover: <span class="in-line-term" aria-label="Audience, Behavior, Condition, Degree">ABCD</span> and glossary flashcards below. Each card contains a term and its definition. Search box to quickly find specific terms or browse through the list to review all entries.
+      
+    </p>
+
+    <div class="glossary-item">
+      <label for="search" class="form-label">Search terms:</label>
+
+      <input
+        type="text"
+        id="search"
+        placeholder="Type to filter..."
+        aria-label="Search glossary terms"
+        class="form-control" 
+      />
+
+      <div id="glossary" role="list"></div>
+    </div>
+    
+
+    <script src="./src/glossaryTerms.js"></script>
+    <script src="./src/script.js"></script>
+
+  </body>
+</html>

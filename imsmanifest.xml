@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest identifier="SPA_SCORM" version="1.0"
+  xmlns="http://www.imsglobal.org/xsd/imscp_v1p1"
+  xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_v1p3"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.imsglobal.org/xsd/imscp_v1p1 imscp_v1p1.xsd">
+  <organizations default="ORG">
+    <organization identifier="ORG">
+      <title>Glossary App</title>
+      <item identifier="ITEM" identifierref="RES">
+        <title>Glossary</title>
+      </item>
+    </organization>
+  </organizations>
+  <resources>
+    <resource identifier="RES" type="webcontent" adlcp:scormType="asset" href="index.html">
+      <file href="index.html"/>
+      <file href="src/glossaryTerms.js"/>
+      <file href="src/bootstrap.min.css"/>
+      <file href="src/styles.css"/>
+      <file href="src/script.js"/>
+    </resource>
+  </resources>
+</manifest>
