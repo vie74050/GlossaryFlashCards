@@ -40,3 +40,26 @@ const cat = {
 ```
 
 ❗ **Important:** Add the `glossaryTerms.js` file before including `./src/scripts.js`.
+
+## SCORM package
+
+The `imsmanifest.xml` file is for SCORM pacakging:
+
+1. ensure dependency paths are correct
+
+   ```xml
+   <file href="index.html"/>
+      <file href="src/glossaryTerms.js"/>
+      <file href="src/bootstrap.min.css"/>
+      <file href="src/styles.css"/>
+      <file href="src/script.js"/>
+   ```
+
+2. zip the folder contents
+
+```bash
+zip -r scorm_package.zip . -x "readme.md" "index-gitsrc.html"
+```
+
+- requires zip if not already installed `choco install zip`
+- excludes `readme.md` and `index-gitsrc.html` from the package.
