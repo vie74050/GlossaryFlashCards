@@ -1,5 +1,5 @@
 @import url(bootstrap.min.css); /*From https://getbootstrap.com/docs/5.3/forms/form-control/ */
-body {
+body.glossary {
     font-family: sans-serif;
     padding: 2rem;
     max-width: 1240px;
